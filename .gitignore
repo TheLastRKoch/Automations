@@ -1,6 +1,57 @@
-*/.venv/*
-*/.idea/*
-*/.vscode/*
-.venv/
-*/.vscode/
-*/.idea/
+# IDE
+./vscode
+
+# Secrets
+/env/*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.pyl
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+sdist/
+*.egg-info/
+*.egg
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Editors
+.vscode/
+.idea/
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Sphinx documentation
+docs/_build/
+
+# PyInstaller
+*.spec
+build/
+dist/
+
+# Miscellaneous
+*.bak
+*.swp
+*~
