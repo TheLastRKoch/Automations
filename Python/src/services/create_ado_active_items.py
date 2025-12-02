@@ -32,14 +32,14 @@ class ServiceCreateADOActiveItems:
 
         work_item_list = self.get_work_items_from_query(
             url_list["Actively working on"])
-        for work_item_row in work_item_list.json().get("workItems", {}):
+        for work_item_row in work_item_list.get("workItems", {}):
             if work_item_id := work_item_row.get("id"):
                 work_item = self.get_work_item_details(
-                    url_list=url_list, work_item_id=work_item_id).json()
+                    url_list=url_list, work_item_id=work_item_id)
                 title = work_item.get("fields", {}).get("System.Title")
                 if title:
                     zenkit.create_task(list_id="3761914", title=title)
-                    created_counter = created_counter+1
+                    created_counter = created_counter + 1
         print(
-            f'From {len(work_item_list.json().get("workItems", {}))} work items identified in ADO, {created_counter} were created in Zenkit.'
+            f'From {len(work_item_list.get("workItems", {}))} work items identified in ADO, {created_counter} were created in Zenkit.'
         )
