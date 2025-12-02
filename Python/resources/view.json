@@ -1,0 +1,22 @@
+[
+    {
+        "date": "2023-06-24T16:48:00.059344",
+        "userID": "1572995517a87ae3fb94abd467423f01",
+        "reference": "213123423123",
+        "description": "Servicentro Cartago",
+        "amount": 12000,
+        "type": "compra",
+        "categoryID": "Transportation",
+        "annotation": ""
+    },
+    {
+        "date": "2022-06-24T16:48:00.059344",
+        "userID": "1572995517a87ae3fb94abd467423f01",
+        "reference": "213123423123",
+        "description": "Mas X Menos Metrocentro",
+        "amount": 50000,
+        "type": "compra",
+        "categoryID": "Groceries",
+        "annotation": ""
+    }
+]

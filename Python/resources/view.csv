@@ -1,0 +1,4 @@
+sep=,
+date,userID,reference,description,amount,type,categoryID,annotation
+2023-06-24T16:48:00.059344,1572995517a87ae3fb94abd467423f01,213123423123,Servicentro Cartago,12000,compra,Transportation,
+2022-06-24T16:48:00.059344,1572995517a87ae3fb94abd467423f01,213123423123,Mas X Menos Metrocentro,50000,compra,Groceries,
