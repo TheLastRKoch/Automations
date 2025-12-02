@@ -38,7 +38,8 @@ class ServiceCreateADOActiveItems:
                     url_list=url_list, work_item_id=work_item_id)
                 title = work_item.get("fields", {}).get("System.Title")
                 if title:
-                    zenkit.create_task(list_id="3761914", title=title)
+                    custom_title = f'{title} #{work_item_id}'
+                    zenkit.create_task(list_id="3761914", title=custom_title)
                     created_counter = created_counter + 1
         print(
             f'From {len(work_item_list.get("workItems", {}))} work items identified in ADO, {created_counter} were created in Zenkit.'
